@@ -1,0 +1,29 @@
+.home {
+  .home-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .col {
+    flex: 0 0 auto;
+  }
+
+  .name-block {
+    color: $color-white;
+
+    .name-desc {
+      font-family: $font-semibold;
+      font-size: 1.8rem;
+      letter-spacing: 0.4rem;
+      text-transform: uppercase;
+      padding-bottom: 1rem;
+    }
+
+    .name-title {
+      font-family: $font-bold;
+      font-size: 10.4rem;
+    }
+  }
+}

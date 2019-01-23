@@ -1,0 +1,82 @@
+header {
+  .header-row {
+    padding: 3.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-block {
+    font-family: $font-semibold;
+    font-size: 1.6rem;
+    display: flex;
+    max-width: 86rem;
+    width: 100%;
+    display: flex;
+    letter-spacing: 1.0px;
+
+    ul {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .nav-link {
+    padding: 0 0.5rem;
+    transition: 0.3s all linear;
+
+    &:first-of-type {
+      padding-left: 0;
+    }
+
+    &:hover {
+      color: $color-yellow;
+    }
+  }
+
+  .btn-start {
+    .progress {
+      position: relative;
+      width: 14rem;
+      height: 50px;
+      letter-spacing: 1px;
+      line-height: 50px;
+      font-family: $font-semibold;
+      font-size: 1.6rem;
+      background-color: transparent;
+      overflow: hidden;
+
+      &:hover {
+        .progress-bar {
+          width: 60%;
+        }
+      }
+    }
+
+    .progress .progress-text {
+      position: absolute;
+      top: 0;
+      width: 14rem;
+      text-align: center;
+      color: $color-white;
+    }
+
+    .progress .progress-bar {
+      height: 100%;
+      overflow: hidden;
+      width: 37%;
+      background-color: $color-yellow;
+      border-radius: inherit;
+      overflow: hidden;
+      position: relative;
+      transition: 0.3s all linear;
+
+    }
+
+    .progress .progress-bar .progress-text {
+      color: $color-black;
+    }
+  }
+}
